@@ -1,7 +1,7 @@
 {
   "name": "dsh-skill-installer",
-  "version": "0.2.2",
-  "description": "DSH 技能安装器：在设置页里列已装技能、从本地目录 / npm 包 / GitHub 仓库安装、按文件导入（.md / 目录 / zip / tar），并管理技能的启用停用与删除；技能可装到用户级 ~/.dsh/skills 或工作区级 <工作区>/.dsh/skills。同时给模型一个 skill_install 工具。",
+  "version": "0.3.0",
+  "description": "DSH 技能安装器：在设置页里按工作区列出已装技能、从本地目录 / npm 包 / GitHub 仓库安装、按文件导入（.md / 目录 / zip / tar），并管理技能的启用停用与删除；一个下拉决定装到用户级 ~/.dsh/skills 还是某个工作区 <工作区>/.dsh/skills。同时给模型一个 skill_install 工具。",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
