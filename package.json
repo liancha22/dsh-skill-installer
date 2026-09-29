@@ -1,0 +1,49 @@
+{
+  "name": "dsh-skill-installer",
+  "version": "0.1.0",
+  "description": "DSH 技能安装器：在设置页里列已装技能，并从本地目录 / npm 包 / GitHub 仓库把技能装进 DSH 的技能根（用户级 ~/.dsh/skills 或工作区级 <工作区>/.dsh/skills），支持卸载与覆盖备份；同时给模型一个 skill_install 工具。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "skills",
+    "installer"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.5-rc.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liancha22/dsh-skill-installer.git"
+  },
+  "homepage": "https://github.com/liancha22/dsh-skill-installer#readme",
+  "bugs": {
+    "url": "https://github.com/liancha22/dsh-skill-installer/issues"
+  },
+  "author": "liancha22 <1784351702@qq.com>"
+}
